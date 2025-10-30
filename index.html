@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal for Candleyyours | Jetweb Labs</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Google Fonts: Playfair Display (Serif) & Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Configure Tailwind to use the brand's custom fonts and color palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'brand-beige': '#F5F5DC',      // Main beige
+                        'brand-brown': '#8B4513',      // Warm brown
+                        'brand-gold': '#FFD700',       // Gold accents
+                        'brand-offwhite': '#FAF9F6',   // Off-white bg
+                        'brand-brown-light': '#A0522D', // Lighter brown for accents
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar for the website mockup to match the brand */
+        .mockup-scrollbar::-webkit-scrollbar {
+            width: 10px;
+        }
+        .mockup-scrollbar::-webkit-scrollbar-track {
+            background: #FAF9F6; /* brand-offwhite */
+        }
+        .mockup-scrollbar::-webkit-scrollbar-thumb {
+            background: #A0522D; /* brand-brown-light */
+            border-radius: 5px;
+            border: 2px solid #FAF9F6;
+        }
+        .mockup-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #8B4513; /* brand-brown */
+        }
+    </style>
+</head>
+<body class="font-sans bg-brand-offwhite text-brand-brown antialiased">
+
+    <!-- 
+      Section 1: The Hero
+      A personalized, high-impact welcome.
+    -->
+    <section class="min-h-screen flex items-center justify-center relative">
+        <div class="container mx-auto px-6 py-20 text-center max-w-4xl">
+            <span class="text-brand-brown-light font-medium tracking-wide uppercase text-sm font-sans">A Proposal for Candleyyours</span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold text-brand-brown mt-5">
+                Hi. You're a premium, high-sensory brand.
+            </h1>
+            <p class="font-serif text-3xl md:text-4xl font-medium italic text-brand-brown-light mt-4 leading-tight">
+                Your sales process shouldn't be a cold DM.
+            </p>
+            <a href="#problem" class="absolute bottom-12 left-1/2 -translate-x-1/2 text-brand-brown-light animate-bounce">
+                <span class="text-sm font-medium font-sans">See the vision</span>
+                <svg class="w-6 h-6 mx-auto mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- 
+      Section 2: The Problem (Visualized)
+      Directly contrasts the "before" (chaos) and "after" (control).
+    -->
+    <section id="problem" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-brown text-center">
+                From a Bottleneck to a Showroom
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 items-start">
+                
+                <!-- Left Side: The "Before" -->
+                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg border border-gray-200">
+                    <h3 class="font-serif text-2xl font-bold text-red-700 text-center mb-6">The DM/Email Bottleneck</h3>
+                    <div class="w-full max-w-sm mx-auto bg-blue-50 rounded-2xl p-4 border border-gray-200 shadow-inner overflow-hidden">
+                        <!-- Mock Chat -->
+                        <div class="space-y-3">
+                            <div class="bg-white p-3 rounded-xl rounded-bl-none shadow-sm w-11/12">
+                                <p class="text-sm">"Hi, how to order?"</p>
+                            </div>
+                            <div class="bg-white p-3 rounded-xl rounded-bl-none shadow-sm w-11/12">
+                                <p class="text-sm">"What are your prices for bulk corporate gifting? Need 100 units."</p>
+                            </div>
+                             <div class="bg-white p-3 rounded-xl rounded-bl-none shadow-sm w-11/12">
+                                <p class="text-sm">"Can you send me a list of all your scents? Do you have a catalog?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6">Lost leads, manual follow-ups, and a sales process that doesn't match your premium brand.</p>
+                </div>
+                
+                <!-- Right Side: The "After" -->
+                <div class="bg-brand-beige p-6 rounded-2xl shadow-xl border-2 border-brand-gold mt-8 md:mt-0">
+                    <h3 class="font-serif text-2xl font-bold text-brand-brown text-center mb-6">The Premium E-commerce Experience</h3>
+                    <div class="w-full max-w-sm mx-auto bg-brand-offwhite rounded-2xl p-4 border border-gray-200 shadow-lg overflow-hidden">
+                        <!-- Mock Product Card -->
+                        <img src="https://placehold.co/400x400/F5F5DC/8B4513?text=Signature+Scent" alt="Signature Scent" class="w-full rounded-lg object-cover">
+                        <div class="py-4">
+                            <h4 class="font-serif text-xl font-semibold text-brand-brown">Vanilla & Warm Tobacco</h4>
+                            <p class="text-lg font-medium text-brand-brown-light mt-1">₹1,499.00</p>
+                            <p class="text-sm text-gray-600 mt-2">A warm, inviting blend of vanilla bean, tobacco leaf, and rich spices.</p>
+                            <button class="w-full bg-brand-brown text-white font-bold py-3 rounded-lg shadow-lg mt-4 hover:bg-brand-brown-light transition-all">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                     <p class="text-center text-brand-brown mt-6">Instant credibility, 24/7 automated sales, and a dedicated funnel for high-value bulk orders.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+      Section 3: "THIS IS YOUR DIGITAL SHOWROOM" (The Solution)
+      The high-fidelity, scrollable mockup. This is the "WOW" moment.
+    -->
+    <section id="solution" class="py-24" style="background: linear-gradient(180deg, #8B4513 0%, #5D4037 100%);">
+        <div class="container mx-auto px-2 md:px-6 max-w-7xl">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-offwhite text-center">
+                This Is Your Digital Showroom
+            </h2>
+            <p class="text-center text-lg text-brand-beige mt-4 mb-12 max-w-2xl mx-auto">
+                This is a high-fidelity mockup of `candleyyours.com`. It's elegant, sensory, and built to sell.
+                <br><strong class="text-white">Try scrolling inside the mockup below.</strong>
+            </p>
+
+            <!-- The Mockup Frame -->
+            <div class="max-w-6xl mx-auto bg-gray-200 rounded-t-xl shadow-2xl overflow-hidden border-b-4 border-brand-gold">
+                
+                <!-- Browser Bar -->
+                <div class="h-11 bg-gray-200 flex items-center px-4 space-x-2 border-b border-gray-300">
+                    <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                    <div class="flex-grow flex justify-center">
+                        <div class="bg-white rounded-full text-sm text-gray-600 px-4 py-1.5 w-full max-w-md text-center shadow-inner">
+                            <span class="text-brand-gold">âš’</span> candleyyours.com
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The "Website" Content (Scrollable) -->
+                <div class="h-[75vh] max-h-[800px] overflow-y-auto mockup-scrollbar bg-brand-offwhite">
+                    
+                    <!-- 1. Her Site's Header -->
+                    <header class="sticky top-0 bg-brand-offwhite/90 backdrop-blur-md z-10 border-b border-gray-100 shadow-sm">
+                        <nav class="container mx-auto px-6 py-4 flex justify-between items-center max-w-6xl">
+                            <div class="font-serif text-3xl font-bold text-brand-brown">Candleyyours</div>
+                            <div class="hidden md:flex space-x-8 font-medium text-brand-brown">
+                                <a href="#" class="font-sans text-brand-brown-light font-semibold border-b-2 border-brand-gold">Shop</a>
+                                <a href="#" class="font-sans hover:text-brand-brown-light">Corporate Orders</a>
+                                <a href="#" class="font-sans hover:text-brand-brown-light">Our Story</a>
+                                <a href="#" class="font-sans hover:text-brand-brown-light">Contact</a>
+                            </div>
+                            <div class="relative">
+                                <svg class="w-6 h-6 text-brand-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                <span class="absolute -top-2 -right-2 bg-brand-brown-light text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">1</span>
+                            </div>
+                        </nav>
+                    </header>
+
+                    <!-- 2. Her Site's Hero -->
+                    <main>
+                        <section class="bg-brand-beige">
+                            <div class="container mx-auto px-6 py-20 max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+                                <div>
+                                    <h1 class="font-serif text-5xl md:text-6xl font-bold text-brand-brown leading-tight">Hand-Poured. High-Sensory.</h1>
+                                    <p class="mt-4 text-lg text-brand-brown-light">
+                                        Discover our collection of premium, small-batch candles, crafted to transform your space with sophisticated scents.
+                                    </p>
+                                    <button class="mt-8 bg-brand-brown text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-brand-brown-light text-lg transition-all">
+                                        Shop Signature Scents
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="https://placehold.co/600x700/F5F5DC/8B4513?text=Candleyyours+Hero" alt="Premium Candles" class="rounded-lg shadow-xl">
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!-- 3. Her Site's "Signature Scents" Product Grid -->
+                        <section class="py-20 bg-brand-offwhite">
+                            <div class="container mx-auto px-6 max-w-6xl text-center">
+                                <h2 class="font-serif text-4xl font-bold text-brand-brown">Shop Signature Scents</h2>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+                                    
+                                    <!-- Product Card 1 -->
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 transform hover:shadow-xl transition-shadow">
+                                        <img src="https://placehold.co/400x400/F5F5DC/8B4513?text=Scent+1" alt="Oud & Sandalwood" class="w-full h-64 object-cover">
+                                        <div class="p-6 text-left">
+                                            <h3 class="font-serif text-2xl font-semibold text-brand-brown">Oud & Sandalwood</h3>
+                                            <p class="text-brand-brown-light mt-1">Earthy, woody, and complex.</p>
+                                            <p class="font-sans font-bold text-xl text-brand-brown mt-3">₹1,499.00</p>
+                                            <button class="w-full mt-4 bg-brand-brown text-white font-bold py-2 rounded-lg hover:bg-brand-brown-light transition-all">View Product</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Product Card 2 -->
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 transform hover:shadow-xl transition-shadow">
+                                        <img src="https://placehold.co/400x400/F5F5DC/8B4513?text=Scent+2" alt="Rose & White Musk" class="w-full h-64 object-cover">
+                                        <div class="p-6 text-left">
+                                            <h3 class="font-serif text-2xl font-semibold text-brand-brown">Rose & White Musk</h3>
+                                            <p class="text-brand-brown-light mt-1">Elegant, floral, and soft.</p>
+                                            <p class="font-sans font-bold text-xl text-brand-brown mt-3">₹1,299.00</p>
+                                            <button class="w-full mt-4 bg-brand-brown text-white font-bold py-2 rounded-lg hover:bg-brand-brown-light transition-all">View Product</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Product Card 3 -->
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 transform hover:shadow-xl transition-shadow">
+                                        <img src="https://placehold.co/400x400/F5F5DC/8B4513?text=Scent+3" alt="Sea Salt & Orchid" class="w-full h-64 object-cover">
+                                        <div class="p-6 text-left">
+                                            <h3 class="font-serif text-2xl font-semibold text-brand-brown">Sea Salt & Orchid</h3>
+                                            <p class="text-brand-brown-light mt-1">Fresh, clean, and ozonic.</p>
+                                            <p class="font-sans font-bold text-xl text-brand-brown mt-3">₹1,299.00</p>
+                                            <button class="w-full mt-4 bg-brand-brown text-white font-bold py-2 rounded-lg hover:bg-brand-brown-light transition-all">View Product</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!-- 4. Her Site's "Product Page Mockup" -->
+                        <section class="py-20 bg-brand-beige border-t border-b border-gray-200">
+                            <div class="container mx-auto px-6 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                                <div>
+                                    <img src="https://placehold.co/600x600/FAF9F6/8B4513?text=Vanilla+&+Warm+Tobacco" alt="Vanilla & Warm Tobacco Candle" class="w-full rounded-lg shadow-xl object-cover">
+                                </div>
+                                <div>
+                                    <h2 class="font-serif text-4xl font-bold text-brand-brown">Vanilla & Warm Tobacco</h2>
+                                    <div class="flex items-baseline gap-3 mt-4">
+                                        <span class="text-brand-brown text-3xl font-bold">₹1,499.00</span>
+                                        <span class="text-gray-400 text-xl line-through">₹1,799.00</span>
+                                    </div>
+                                    <p class="text-brand-brown-light mt-6">Our 250g signature blend in a premium amber jar. A warm, inviting blend of vanilla bean, tobacco leaf, and rich spices. Perfect for cozy evenings.</p>
+                                    
+                                    <div class="mt-8">
+                                        <h4 class="font-sans text-sm font-semibold text-brand-brown uppercase tracking-wide">Scent Profile</h4>
+                                        <p class="font-sans text-brand-brown-light"><strong>Top:</strong> Tobacco Leaf, Spice<br><strong>Middle:</strong> Vanilla, Cacao<br><strong>Base:</strong> Tonka Bean, Dry Fruit</p>
+                                    </div>
+                                    
+                                    <div class="mt-8">
+                                        <h4 class="font-sans text-sm font-semibold text-brand-brown uppercase tracking-wide">Quantity</h4>
+                                        <div class="flex items-center border border-brand-brown rounded-lg w-32 justify-between mt-2">
+                                            <button class="font-bold text-2xl px-3 py-1 text-brand-brown">-</button>
+                                            <span class="font-bold text-lg text-brand-brown">1</span>
+                                            <button class="font-bold text-2xl px-3 py-1 text-brand-brown">+</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="w-full bg-brand-gold text-brand-brown font-bold py-4 rounded-lg shadow-lg mt-8 text-lg hover:bg-yellow-400 transition-all">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 5. Her Site's "Corporate & Bulk Orders" Section -->
+                        <section class="py-20 bg-brand-offwhite">
+                            <div class="container mx-auto px-6 max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                                <div class="pr-8">
+                                    <h2 class="font-serif text-4xl font-bold text-brand-brown">Corporate & Bulk Orders</h2>
+                                    <p class="text-brand-brown-light mt-4 text-lg">Elevate your client gifting, weddings, or events with custom-branded, premium candles. We offer special pricing and customization for bulk orders.</p>
+                                    <p class="text-brand-brown-light mt-4">Fill out the form to get a personalized quote from our team within one business day.</p>
+                                </div>
+                                
+                                <form class="bg-white p-8 rounded-lg shadow-xl border border-gray-100 space-y-4">
+                                    <div class="font-serif text-2xl font-semibold text-brand-brown mb-4">Get a Quote</div>
+                                    <div>
+                                        <label for="name" class="font-sans text-sm font-medium text-brand-brown">Full Name</label>
+                                        <input type="text" id="name" class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-brand-offwhite focus:border-brand-gold focus:ring-brand-gold">
+                                    </div>
+                                    <div>
+                                        <label for="company" class="font-sans text-sm font-medium text-brand-brown">Company / Event Name</label>
+                                        <input type="text" id="company" class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-brand-offwhite focus:border-brand-gold focus:ring-brand-gold">
+                                    </div>
+                                    <div>
+                                        <label for="quantity" class="font-sans text-sm font-medium text-brand-brown">Estimated Quantity</label>
+                                        <select id="quantity" class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-brand-offwhite focus:border-brand-gold focus:ring-brand-gold">
+                                            <option>50 - 100 units</option>
+                                            <option>101 - 250 units</option>
+                                            <option>251 - 500 units</option>
+                                            <option>500+ units</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="message" class="font-sans text-sm font-medium text-brand-brown">Message</label>
+                                        <textarea id="message" rows="3" class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-brand-offwhite focus:border-brand-gold focus:ring-brand-gold" placeholder="Tell us about your event, desired scents, and customization needs..."></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full bg-brand-brown text-white font-bold py-3 rounded-lg shadow-lg hover:bg-brand-brown-light transition-all text-lg">
+                                        Submit Inquiry
+                                    </button>
+                                </form>
+                            </div>
+                        </section>
+                    </main>
+
+                    <!-- 6. Her Site's Footer -->
+                    <footer class="p-10 bg-brand-brown text-brand-beige">
+                        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+                            <div>
+                                <h5 class="font-sans text-lg font-semibold text-white mb-3">Shop</h5>
+                                <ul class="space-y-2 text-sm text-brand-beige/80">
+                                    <li><a href="#" class="hover:text-white">Signature Scents</a></li>
+                                    <li><a href="#" class="hover:text-white">Seasonal</a></li>
+                                    <li><a href="#" class="hover:text-white">Gift Sets</a></li>
+                                </div>
+                            <div>
+                                <h5 class="font-sans text-lg font-semibold text-white mb-3">About</h5>
+                                <ul class="space-y-2 text-sm text-brand-beige/80">
+                                    <li><a href="#" class="hover:text-white">Our Story</a></li>
+                                    <li><a href="#" class="hover:text-white">Candle Care</a></li>
+                                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                                </ul>
+                            </div>
+                             <div>
+                                <h5 class="font-sans text-lg font-semibold text-white mb-3">Orders</h5>
+                                 <ul class="space-y-2 text-sm text-brand-beige/80">
+                                    <li><a href="#" class="hover:text-white">Corporate & Bulk</a></li>
+                                    <li><a href="#" class="hover:text-white">Track Your Order</a></li>
+                                    <li><a href="#" class="hover:text-white">FAQ</a></li>
+                                </ul>
+                            </div>
+                             <div>
+                                <h5 class="font-sans text-lg font-semibold text-white mb-3">Follow</h5>
+                                <p class="text-sm text-brand-beige/80">Instagram<br>Facebook<br>Pinterest</p>
+                            </div>
+                        </div>
+                        <div class="text-center text-gray-400 text-xs mt-10 pt-10 border-t border-brand-brown-light/30">
+                            Copyright &copy; 2025 Candleyyours. All rights reserved.
+                        </div>
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 
+      Section 4: The Features
+      Simple, benefit-driven cards.
+    -->
+    <section class="py-24 bg-brand-offwhite">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-brown text-center">
+                This Is What We Build
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <!-- Feature Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                    <svg class="w-12 h-12 text-brand-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" /></svg>
+                    <h3 class="font-serif text-2xl font-semibold text-brand-brown mt-5">Instant E-commerce</h3>
+                    <p class="text-brand-brown-light mt-2">We build your 24/7 digital showroom, complete with a full catalog, secure cart, and online payments. Sell while you sleep.</p>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                    <svg class="w-12 h-12 text-brand-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6M9 11.25h6M9 15.75h6" /></svg>
+                    <h3 class="font-serif text-2xl font-semibold text-brand-brown mt-5">Automated Bulk Orders</h3>
+                    <p class="text-brand-brown-light mt-2">Stop chasing high-value leads in DMs. We create a dedicated, professional form that captures corporate and event clients automatically.</p>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                    <svg class="w-12 h-12 text-brand-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <h3 class="font-serif text-2xl font-semibold text-brand-brown mt-5">A Premium Brand</h3>
+                    <p class="text-brand-brown-light mt-2">A beautiful, secure website with a custom `.com` domain is the #1 way to build trust and show customers your brand is as premium as your products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 
+      Section 5: The Call to Action
+      The final, clear conversion point.
+    -->
+    <section class="py-24 bg-brand-beige">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+            <h2 class="font-serif text-5xl md:text-6xl font-bold text-brand-brown">
+                Ready to light up your online sales?
+            </h2>
+            <p class="text-lg text-brand-brown-light mt-6 max-w-xl mx-auto">
+                This is what we do. We take premium brands like yours and build the sophisticated digital platforms they deserve.
+            </p>
+            <a href="#" class="inline-block bg-brand-gold text-brand-brown font-bold text-xl py-4 px-12 rounded-lg shadow-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 mt-10 font-sans">
+                Let's Book a 15-min Call
+            </a>
+        </div>
+    </section>
+
+    <!-- 
+      Footer
+      A simple sign-off.
+    -->
+    <footer class="py-10 bg-brand-brown text-gray-400 text-center">
+        <p classs="text-sm">A demo proposal for Candleyyours.</p>
+        <p class="text-xs text-gray-500 mt-1">Crafted by Jetweb Labs</p>
+    </footer>
+
+</body>
+</html>
